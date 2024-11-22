@@ -1,33 +1,120 @@
+/* Estilo Global */
 body {
-  color: white;
-  background: black;
-  margin: 0px;
-  font-family: "Chakra Petch", sans-serif;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://wallpapercave.com/wp/wp11234119.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
-header {
-  border-bottom: solid 2px rgb(42, 122, 228);
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
-  font-size: 32px;
-  color: rgb(42, 122, 228);
+  min-height: 100vh;
 }
 
-section {
-  background: rgb(184, 156, 213);
-  padding-bottom: 80px;
-  padding-top: 80px;
-  display: flex;
-  justify-content: center;
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 30px;
+  color: #FFD700;
 }
 
-.chamada-texto {
-  margin-right: 5%;
+header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px #000;
 }
 
-h1 {
-  font-size: 40px;
+header p {
+  font-size: 1.2em;
 }
 
-p {
-  font-size: 20px;
+/* Conteúdo Principal */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+main h2 {
+  font-size: 2.5em;
+  color: #FFD700;
+  text-shadow: 1px 1px #000;
+  margin-top: 20px;
+}
+
+main p {
+  line-height: 1.8;
+  font-size: 1.2em;
+}
+
+.evento {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.evento h3 {
+  font-size: 1.8em;
+  color: #FFD700;
+}
+
+.evento p {
+  font-size: 1em;
+}
+
+.evento img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão */
+.cta-button {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  color: #000;
+  background: #FFD700;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ffc107;
+  transform: translateY(-5px);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFD700;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
